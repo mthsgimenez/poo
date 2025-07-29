@@ -21,6 +21,8 @@ interface
     procedure setNome(aNome: String);
     function getNivel: Integer;
     procedure setNivel(aNivel: Integer);
+    function getGenero: String;
+    procedure setGenero(aGenero: String);
     constructor Create(aDano, aDefesa: Integer);
   end;
 
@@ -55,6 +57,11 @@ begin
   Result := Self.Defesa + Self.Nivel;
 end;
 
+function TPersonagem.getGenero: String;
+begin
+  Result := Self.Genero;
+end;
+
 function TPersonagem.getNivel: Integer;
 begin
   Result := self.Nivel;
@@ -86,6 +93,11 @@ begin
   end;
 
   Self.Defesa := aDefesa;
+end;
+
+procedure TPersonagem.setGenero(aGenero: String);
+begin
+  Self.Genero := aGenero;
 end;
 
 procedure TPersonagem.setNivel(aNivel: Integer);
