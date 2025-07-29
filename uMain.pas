@@ -30,9 +30,10 @@ var personagem: TPersonagem;
 var player: TPLayer;
 begin
   personagem := TPersonagem.Create(10, 5);
-  personagem.Nome := 'Teste';
+  personagem.getDano;
+  personagem.setDano(-10);
 
-  player := TPlayer.Create(7, 10);
+//  player := TPlayer.Create(7, 10);
 end;
 
 end.
