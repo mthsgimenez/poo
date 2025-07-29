@@ -9,6 +9,11 @@ uses
 type
   TForm1 = class(TForm)
     Button1: TButton;
+    edit_Nome: TEdit;
+    edit_Vida: TEdit;
+    edit_Dano: TEdit;
+    edit_Defesa: TEdit;
+    combo_Genero: TComboBox;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
