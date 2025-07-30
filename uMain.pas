@@ -28,11 +28,11 @@ implementation
 
 {$R *.dfm}
 
-uses uClasses;
+uses uTPersonagem, uTPlayer, uTBoss;
 
 procedure TForm1.Button1Click(Sender: TObject);
 var personagem: TPersonagem;
-var player: TPLayer;
+var player: TPlayer;
 begin
   personagem := TPersonagem.Create(10, 5);
   personagem.getDano;

@@ -24,7 +24,7 @@ object Form1: TForm1
     Left = 200
     Top = 34
     Width = 216
-    Height = 32
+    Height = 23
     TabOrder = 1
     TextHint = 'Nome'
   end
@@ -32,7 +32,7 @@ object Form1: TForm1
     Left = 200
     Top = 116
     Width = 216
-    Height = 32
+    Height = 23
     NumbersOnly = True
     TabOrder = 2
     TextHint = 'Vida'
@@ -41,7 +41,7 @@ object Form1: TForm1
     Left = 200
     Top = 161
     Width = 216
-    Height = 32
+    Height = 23
     NumbersOnly = True
     TabOrder = 3
     TextHint = 'Dano'
@@ -50,7 +50,7 @@ object Form1: TForm1
     Left = 200
     Top = 206
     Width = 216
-    Height = 32
+    Height = 23
     NumbersOnly = True
     TabOrder = 4
     TextHint = 'Defesa'

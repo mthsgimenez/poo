@@ -1,9 +1,9 @@
-unit uClasses;
+unit uTPersonagem;
 
 interface
 
   type TPersonagem = class
-  private
+  protected
     Nome: String;
     Vida: Integer;
     Genero: String;
@@ -26,26 +26,11 @@ interface
     constructor Create(aDano, aDefesa: Integer);
   end;
 
-  type TPlayer = class (TPersonagem)
-    NickName: String;
-    Experiencia: Double;
-
-    function getDano: Integer;
-    procedure setDano(aDano: Integer);
-  end;
-
-  type TBoss = class (TPersonagem)
-    HabilidadeEspecial: String;
-
-    function getDano: Integer;
-    procedure setDano(aDano: Integer);
-  end;
-
 implementation
 
-{ TPersonagem }
-
 uses SysUtils;
+
+{ TPersonagem }
 
 constructor TPersonagem.Create(aDano, aDefesa: Integer);
 begin
@@ -125,30 +110,6 @@ begin
   end;
 
   Self.Vida := aVida;
-end;
-
-{ TBoss }
-
-function TBoss.getDano: Integer;
-begin
-  Result := Self.Dano;
-end;
-
-procedure TBoss.setDano(aDano: Integer);
-begin
-  Self.Dano := aDano;
-end;
-
-{ TPlayer }
-
-function TPlayer.getDano: Integer;
-begin
-  Result := Self.Dano;
-end;
-
-procedure TPlayer.setDano(aDano: Integer);
-begin
-  Self.Dano := aDano;
 end;
 
 end.
